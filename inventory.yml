@@ -1,0 +1,16 @@
+all:
+  children:
+    Networking:
+      hosts:
+        hq-rtr:
+        br-rtr:
+    Servers:
+      hosts:
+        hq-srv:
+          ansible_host: 192.168.100.2
+          ansible_port: 2024
+    Clients:
+      hosts:
+        hq-cli:
+          ansible_host: 192.168.200.2
+          ansible_port: 2024
