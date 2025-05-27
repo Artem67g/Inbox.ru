@@ -13,5 +13,5 @@ br-rtr  IN      A       10.10.10.1
 hq-srv  IN      A       192.168.15.2
 hq-cli  IN      A       192.168.25.2
 br-srv  IN      A       10.10.10.2
-moodle  IN      CNAME   hq-rtr
-wiki    IN      CNAME   hq-rtr
+moodle  IN      CNAME   hq-srv
+wiki    IN      CNAME   br-srv
